@@ -26,12 +26,16 @@ header.top {
   position: absolute;
   display: block;
   right: 7%;
-  top: 7px;
+  top: 5px;
   color: #ccc;
   font-size: 14px;
   letter-spacing: 2px;
   text-decoration: none;
   opacity: .8;
+}
+
+#adminLogin img {
+  height: 11px;
 }
 
 #adminLogin:hover {
