@@ -274,7 +274,6 @@ header h1 img{
 }
 
 
-
 @media only screen and (max-width: 740px) {
     .card-wrap {
       display: flex;
@@ -336,15 +335,14 @@ header h1 img{
       color: #000;
       text-decoration: underline;
       line-height: 20px;
-      font-family: 'vi_van_thonormal';
-      font-size: 20px;
+      font-size: 30px;
     }
 }
 
 
+
 @media only screen and (max-width: 850px) {
   
-
   #main-menu li a {
     font-size: 18px;
   }
@@ -355,11 +353,16 @@ header h1 img{
   }
 }
 
-@media only screen and (max-width: 645px) {
-  .card-wrap {
-      justify-content: center;
-    }
+
+
+@media only screen and (max-width: 650px) {
+  .card-wrap{
+    width: 330px;
+    margin:auto;
+  }
 }
+
+
 
 
 
