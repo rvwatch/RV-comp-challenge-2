@@ -1,0 +1,358 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+}
+
+body {
+  font-family: helvetica;
+  background-color: #0C1415;
+  background: url(images/monsterBG.jpg) no-repeat;
+  background-size: cover;
+}
+
+header.top {
+  background-color: #000;
+  height: 148px;
+  position: relative;
+  color: #fff;
+  border-bottom: 5px solid red;
+  box-shadow: 1px 1px 10px grey;
+  padding: 0 5%;
+}
+
+#adminLogin {
+  position: absolute;
+  display: block;
+  right: 7%;
+  top: 7px;
+  color: #ccc;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  opacity: .8;
+}
+
+#adminLogin:hover {
+  text-decoration: underline;
+}
+
+#main-menu {
+  position: absolute;
+  bottom: 30px;
+  left: 5%;
+  padding: 0;
+  z-index: 10;
+}
+
+#main-menu li {
+  display: inline;
+  margin-right: 20px;
+}
+
+#main-menu li.mobile-admin {
+  display: none;
+}
+
+#main-menu li a {
+    color: #ccc;
+    line-height: 30px;
+    font-family: 'vi_van_thonormal';
+    font-size: 20px;
+    letter-spacing: 2px;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+#main-menu li a:hover {
+  text-decoration: underline;
+}
+
+#main-menu li a img {
+  height: 25px;
+  margin-right: 5px;
+}
+
+#main-menu li a #timeline-icon {
+  height: 25px;
+  opacity: .7;
+}
+
+#mobile-menu {
+  background: url(images/menu.svg) no-repeat;
+  width: 65px;
+  height: 80px;
+  background-size: 80px;
+  display: none;
+}
+
+
+header.top nav{
+  display: inline-block;
+  margin: 25px 0 0 0;
+}
+
+#main-menu {
+  margin: 0;
+  display: block;
+}
+
+
+header h1 {
+  margin: 0;
+  display: block;
+  position: absolute;
+  right: 5%;
+  top: 22px;
+  
+}
+
+header h1 img{
+  height: 105px;
+}
+
+#characterTitle {
+  font-family: 'vi_van_thonormal';
+  font-size: 46px;
+  margin: 30px 0 28px 5%;
+  text-shadow:
+   -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+     1px 1px 0 #fff;
+}
+
+.card-wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 4.8%;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  max-width: 1300px;
+}
+
+.card-template{
+  width: 278px;
+  border: 5px solid red;
+  height: 400px;
+  margin: 0 10px 13px 0;
+  box-shadow: 1px 1px 10px grey;
+  background: #fff;
+  align-self: flex-start;
+}
+
+.card-header {
+  height: 140px;
+  position: relative;
+  background: #000;
+}
+
+.char-icon {
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  height: 40px;
+}
+
+.card-header .rank {
+  position: absolute;
+  top: 8px;
+  right: 9px;
+  font-family: 'vi_van_thonormal';
+  font-size: 30px;
+  color: #fff;
+}
+
+.card-header.eleven {
+  background: url(images/eleven.jpg) no-repeat;
+  background-size: 310px;
+}
+
+.card-header.will {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/will.jpg');
+  background-size: 310px;
+}
+
+.card-header.will .char-icon {
+  height: 45px;
+}
+
+.card-header.mike {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('images/stranger-things.jpeg');
+  background-size: 345px;
+  background-position: -50px -20px;
+}
+
+.card-header.mike .char-icon {
+  height: 65px;
+  -ms-transform: rotate(-25deg); 
+  -webkit-transform: rotate(-25deg); 
+  transform: rotate(-25deg);
+}
+
+.card-header.dustin {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('images/noteeth.jpg');
+  background-size: 345px;
+  background-position: -50px -20px;
+}
+
+.card-header.lucas {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('images/lucas.jpg');
+  background-size: 415px;
+  background-position: -56px -2px;
+}
+
+.card-header.joyce {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('images/joyce.jpg');
+  background-size: 281px;
+  background-position: -12px 0px;
+}
+
+.card-header.nancy {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('images/nancy.jpg');
+  background-size: 281px;
+  background-position: -12px 0;
+}
+
+.card-header.barb {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('images/barb.jpg');
+  background-size: 281px;
+  background-position: -12px 0;
+}
+
+.card-template ul {
+  padding: 0 0 0 15px;
+  margin-top: 10px;
+}
+
+.card-template ul li {
+  list-style-type: none;
+  font-size: 13px;
+}
+
+.card-template ul li h2 {
+  font-family: 'vi_van_thonormal';
+  font-size: 21px;
+  margin:0;
+}
+
+.card-template .date{
+  font-size: 13px;
+}
+
+.card-template .link-wrap {
+  margin: 20px 0 10px 0;
+}
+
+.card-template .link-wrap a {
+  color: #9D9D9D;
+  display: block;
+  font-size: 13px;
+  background: #EFEFEF;
+  padding: 6px;
+  width: 238px;
+  height: 50px;
+  overflow-wrap: break-word;
+  overflow-y: auto;
+}
+
+.card-template .playlist-name {
+  font-size: 16px;
+  margin: 3px 0  5px 0;
+}
+
+.card-template .char-number {
+  font-family: 'vi_van_thonormal';
+  font-size: 40px; 
+  color: red;
+}
+
+
+
+@media only screen and (max-width: 740px) {
+    .card-wrap {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-left: 4.8%;
+      padding-bottom: 20px;
+    }
+
+    header h1 img{
+        height: 24vw;
+        max-height: 100px;
+    }
+
+    #adminLogin {
+      display: none;
+    }
+
+    #mobile-menu {
+      background: url(images/menu.svg) no-repeat;
+      width: 65px;
+      height: 80px;
+      background-size: 80px;
+      display: block;
+    }
+
+    #main-menu {
+      display: none;
+      background-color: #fff;
+      border: 5px solid red;
+      box-shadow: 1px 1px 10px grey;
+      position: relative;
+      bottom: 0;
+      left: auto;
+      padding: 10px 20px;
+    }
+
+    #main-menu li a img {
+      display: none;
+    }
+
+    nav:hover #main-menu,
+    nav:focus #main-menu{
+      display: block;
+    }
+
+    #main-menu li {
+      list-style-type: none;
+      margin: 10px 0;
+      display: block;
+    }
+
+
+    #main-menu li.mobile-admin {
+      display: block;
+    }
+
+    #main-menu li a {
+      color: #000;
+      text-decoration: underline;
+      line-height: 20px;
+      font-family: 'vi_van_thonormal';
+      font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 850px) {
+  
+
+  #main-menu li a {
+    font-size: 18px;
+  }
+
+  #main-menu li a img {
+    height: 20px;
+    margin-right: 3px;
+  }
+}
+
+
+
+
+
+
